@@ -5,12 +5,12 @@ synopsis: "Effortless Python bindings for OCaml modules"
 description: """
 Effortless Python bindings for OCaml modules
 """
-maintainer: ["Thierry Martinez <thierry.martinez@inria.fr>"]
+maintainer: ["Seb Hinderer <sebastien.hinderer@inria.fr>"]
 authors: ["Thierry Martinez <thierry.martinez@inria.fr>"]
 license: "BSD-2-Clause"
-homepage: "https://github.com/thierry-martinez/ocaml-in-python"
-doc: "https://github.com/thierry-martinez/ocaml-in-python"
-bug-reports: "https://github.com/thierry-martinez/ocaml-in-python"
+homepage: "https://github.com/ocamllibs/ocaml-in-python"
+doc: "https://github.com/ocamllibs/ocaml-in-python"
+bug-reports: "https://github.com/ocamllibs/ocaml-in-python"
 depends: [
   "dune" {>= "2.9"}
   "ocaml" {>= "4.13.0"}
@@ -38,7 +38,7 @@ build: [
   ]
   ["dune" "install" "-p" name "--create-install-files" name]
 ]
-dev-repo: "git+https://github.com/thierry-martinez/ocaml-in-python"
+dev-repo: "git+https://github.com/ocamllibs/ocaml-in-python"
 substs: ["python3-command"]
 post-messages: "\
 You should register the \"ocaml\" package in your Python environment.
